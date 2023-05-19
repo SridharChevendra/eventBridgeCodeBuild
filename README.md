@@ -63,6 +63,8 @@ Note: Take a note of the "cloneUrlSsh" for future reference
 #### 4. Create Code Build IAM roles
 This role enables AWS CodeBuild to interact with other services.
 ```
+cd eventBridgeCodeBuild
+
 aws iam create-role --role-name ${CODEBUILD_ROLENAME} --assume-role-policy-document file://Resources/role-policy.json 
  
 # To add an inline permissions policy and permissions
