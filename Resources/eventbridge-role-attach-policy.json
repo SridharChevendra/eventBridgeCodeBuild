@@ -1,0 +1,14 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [{
+		"Effect": "Allow",
+		"Action": [
+			"codebuild:StartBuild"
+		],
+		"Resource": [
+			"arn:aws:codebuild:us-east-1:<AWS_ACCOUNT_ID>:project/codebuild-project8",
+			"arn:aws:codebuild:us-east-1:<AWS_ACCOUNT_ID>:project/codebuild-project9",
+			"arn:aws:codebuild:us-east-1:<AWS_ACCOUNT_ID>:project/codebuild-project10"
+		]
+	}]
+}

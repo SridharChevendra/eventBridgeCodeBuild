@@ -1,0 +1,38 @@
+{"Version": "2012-10-17",
+ "Statement": [{
+			"Effect": "Allow",
+			"Resource": [
+				"arn:aws:logs:*:*:log-group:/aws/codebuild/*",
+				"arn:aws:logs:*:*:log-group:/aws/codebuild/*:*"
+			],
+			"Action": [
+				"logs:CreateLogGroup",
+				"logs:CreateLogStream",
+				"logs:PutLogEvents"
+			]
+		},
+
+		{
+			"Effect": "Allow",
+			"Resource": [
+				"arn:aws:codecommit:*:*:versionCode"
+			],
+			"Action": [
+				"codecommit:GitPull"
+			]
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"codebuild:CreateReportGroup",
+				"codebuild:CreateReport",
+				"codebuild:UpdateReport",
+				"codebuild:BatchPutTestCases",
+				"codebuild:BatchPutCodeCoverages"
+			],
+			"Resource": [
+				"arn:aws:codebuild:*:*:report-group/*"
+			]
+		}
+	]
+}

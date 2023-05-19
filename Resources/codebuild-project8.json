@@ -1,0 +1,18 @@
+{
+    "name": "<CODEBUILD_ROLENAME>",
+    "source": {
+        "type": "CODECOMMIT",
+        "location": "https://git-codecommit.<AWS_REGION>.amazonaws.com/v1/repos/<REPONAME>"
+    },
+    "sourceVersion": "refs/heads/master",
+    "artifacts": {
+        "type": "NO_ARTIFACTS"
+        
+    },
+    "environment": {
+        "type": "LINUX_CONTAINER",
+        "image": "public.ecr.aws/bitnami/python:3.8",
+        "computeType": "BUILD_GENERAL1_SMALL"
+    },
+    "serviceRole": "arn:aws:iam::<AWS_ACCOUNT_ID>:role/eb-codebuild-<AWS_ACCOUNT_ID>"
+}

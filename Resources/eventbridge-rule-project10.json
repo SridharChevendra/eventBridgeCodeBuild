@@ -1,0 +1,13 @@
+{
+    "account": ["<AWS_ACCOUNT_ID>"],
+    "detail": {
+      "bucket": {
+        "name": ["eb-<AWS_ACCOUNT_ID>"]
+      },
+      "object": {
+        "key": ["manifest10.json"]
+      }
+    },
+    "detail-type": ["Object Created"],
+    "source": ["aws.s3"]
+  }

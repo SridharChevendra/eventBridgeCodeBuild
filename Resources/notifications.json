@@ -1,0 +1,6 @@
+{ 
+    "TopicConfigurations":[],
+    "QueueConfigurations":[],
+    "LambdaFunctionConfigurations":[],
+    "EventBridgeConfiguration": {}
+}
