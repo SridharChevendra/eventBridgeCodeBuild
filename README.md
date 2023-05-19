@@ -25,6 +25,9 @@ mkdir eventBridge && cd eventBridge
 
 ```
 Clone the GitRepo to your local machine.
+```
+git clone https://github.com/dssc1/eventBridgeCodeBuild.git
+cd eventBridgeCodeBuild
 #### 2. Environment Variables 
 
 Set the following Variables for AWS CLI.
@@ -147,7 +150,7 @@ aws s3api put-bucket-notification-configuration --bucket ${S3_BUCKET} --notifica
 #### 8.  Create AWS EventBridge Roles
 Create a role and attach policy
 ```
-cd ~/environment/eventBridge
+cd ~/environment/eventBridge/eventBridgeCodeBuild
     
 aws iam create-role --role-name ${EVENTBRIDGE_ROLENAME} --assume-role-policy-document file://Resources/eventbridge-role.json 
 
