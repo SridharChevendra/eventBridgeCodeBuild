@@ -1,12 +1,12 @@
 # Event Bridge CodeBuild Choreography
 
-Using AWS EventBridge, AWS CodeBuild to build scalable artifacts
-Refer article for more details on the architecture 
+Step-by-step instructions for creating scalable artifacts using Amazon Web Services EventBridge and AWS CodeBuild. 
+
+To understand the architecture and various components, refer article the following article for more details. 
 
 https://www.linkedin.com/pulse/event-bridge-codebuild-choreography-sridhar-chevendra?trk=public_profile_article_view
 
-![Proposed Architecture_Choreography](https://github.com/dssc1/eventBridgeCodeBuild/assets/32348488/a809d49a-bb19-4f5d-b80a-4257466acfec)
-
+![Proposed Architecture_Choreography](https://github.com/dssc1/eventBridgeCodeBuild/assets/32348488/9045314d-2340-4e36-8ca1-6729909e18df)
 
 ## Getting Started
 ### Pre-requisites
