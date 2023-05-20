@@ -28,6 +28,8 @@ Clone the GitRepo to your local machine.
 ```
 git clone https://github.com/dssc1/eventBridgeCodeBuild.git
 cd eventBridgeCodeBuild
+```
+
 #### 2. Environment Variables 
 
 Set the following Variables for AWS CLI.
@@ -61,7 +63,7 @@ Output:
     }
 }
 ```
-Note: Take a note of the "cloneUrlSsh" for future reference
+Note: Take a note of the "cloneUrlHttp" for future reference
 
 #### 4. Create Code Build IAM roles
 This role enables AWS CodeBuild to interact with other services.
@@ -120,7 +122,7 @@ aws codebuild create-project --region ${AWS_REGION} --cli-input-json file://Reso
 #### 6. Upload to AWS CodeCommit
   To Upload the updated configuration file, clone AWS code commit repository. Copy the "cloneUrlSsh" from Step 3.
   ```
-  git clone <<cloneUrlSsh>>
+  git clone <<cloneUrlHttp>>
   ```
 Copy the file from the code folder to gitclone 
 
