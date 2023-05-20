@@ -1,5 +1,5 @@
 {
-    "name": "<CODEBUILD_ROLENAME>",
+    "name": "codebuild-project9",
     "source": {
         "type": "CODECOMMIT",
         "location": "https://git-codecommit.<AWS_REGION>.amazonaws.com/v1/repos/<REPONAME>"
