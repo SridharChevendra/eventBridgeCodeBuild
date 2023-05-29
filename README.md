@@ -28,7 +28,7 @@ mkdir eventBridge && cd eventBridge
 ```
 Clone the GitRepo to your local machine.
 ```
-git clone https://github.com/dssc1/eventBridgeCodeBuild.git
+git clone https://github.com/SridharChevendra/eventBridgeCodeBuild.git
 cd eventBridgeCodeBuild
 ```
 
